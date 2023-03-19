@@ -9,6 +9,7 @@ import org.junit.Test;
 import pages.MainPageScooter;
 import pages.OrderPageScooter;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.junit.After;
 
 import static сonstants.MainPageUrl.MAIN_PAGE_URL;
 import static org.junit.Assert.assertTrue;
@@ -75,8 +76,8 @@ public class OrderPageScooterTest {
         assertTrue(objOrderPageScooter.checkSuccessModal());
     }
 
-    /*   @After //закрыть браузер
+       @After
     public void tearDown() {
         driver.quit();
-    }*/
+    }
 }
